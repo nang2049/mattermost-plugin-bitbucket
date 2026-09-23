@@ -55,6 +55,7 @@ export const LinkTooltip = ({href, connected, theme}) => {
             icon = (
                 <span style={{color}}>
                     <Octicon
+                        className='octicon'
                         icon={iconType}
                         size='small'
                         verticalAlign='middle'
@@ -68,6 +69,7 @@ export const LinkTooltip = ({href, connected, theme}) => {
             icon = (
                 <span style={{color}}>
                     <Octicon
+                        className='octicon'
                         icon={iconType}
                         size='small'
                         verticalAlign='middle'
