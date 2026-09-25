@@ -115,10 +115,9 @@ export const LinkTooltip = ({href, connected, theme}) => {
                                 <span>{'#' + data.id}</span>
                             </a>
                             <div className='markdown-text mt-1 mb-1'>
-                                <ReactMarkdown
-                                    source={data.type === 'pull-requests' ? data.summary.raw : data.content.raw}
-                                    linkTarget='_blank'
-                                />
+                                <ReactMarkdown linkTarget='_blank'>
+                                    {data.type === 'pull-requests' ? data.summary.raw : data.content.raw}
+                                </ReactMarkdown>
                             </div>
 
                             {/* base <- head */}
